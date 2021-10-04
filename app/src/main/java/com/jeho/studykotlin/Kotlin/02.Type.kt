@@ -1,8 +1,5 @@
 package com.jeho.studykotlin.Kotlin
 
-class Type {
-}
-
 // 02. Type = 자료형
 
 // 정수형 = Long > Int > Short > Byte (표현할 수 있는 정수의 범위 순으로 나타냄)

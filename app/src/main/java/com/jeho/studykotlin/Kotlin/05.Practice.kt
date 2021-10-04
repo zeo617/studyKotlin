@@ -1,9 +1,5 @@
 package com.jeho.studykotlin.Kotlin
 
-class Practice2 {
-}
-
-
 fun plusThree(first: Int, second: Int, third: Int): Int {
 
     val result = first + second + third

@@ -1,9 +1,5 @@
 package com.jeho.studykotlin.Kotlin
 
-class Variable {
-}
-
-
 // 01. Variable = 변수 (상자안에 복잡한 정보를 집어넣어 놓고, 필요할 때 상자 안에서 꺼내어 사용함)
 
 // 변수 선언하는 방법

@@ -1,8 +1,5 @@
 package com.jeho.studykotlin.Kotlin
 
-class Function {
-}
-
 // 함수 (Function) : input 을 넣어주면 output 이 나오는 것
 
 // 함수 선언 방법
