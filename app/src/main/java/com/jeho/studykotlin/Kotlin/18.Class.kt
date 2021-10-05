@@ -30,6 +30,29 @@ fun main(array: Array<String>) {
 
     val superCar: SuperCar = SuperCar("good engine", "big", "white")
 
+
+    // 인스턴스가 가지고 있는 기능을 사용하는 방법
+    val runableCar: RunableCar = RunableCar("simple engine", "short body")
+
+    // RunableCar.ride() -> 불가능 (설명서 자체에는 기능이 없고, 만들어진 객체에서 기능을 사용할 수 있다)
+
+    runableCar.ride()
+    runableCar.navi("부산")
+    runableCar.drive()
+
+
+    // 인스턴스의 멤버변수(engine, body, door)에 접근하는 방법
+    val runableCar2: RunableCar2 = RunableCar2("nice engine", "long body")
+    println(runableCar2.body)
+    println(runableCar2.engine)
+
+
+    // 오버로딩
+    println()
+    val testClass = TestClass()
+    testClass.test(1)
+    testClass.test(1, 2)
+
 }
 
 // 클래스(설명서) 만드는 방법(1)
@@ -89,5 +112,67 @@ class Car2 {
 
     }
 
+
+}
+
+
+// 클래스의 기능들을 만드는 방법(1)
+class RunableCar(engine: String, body: String) {
+
+    fun ride() {
+        println("탑승하셨습니다")
+    }
+
+    fun drive() {
+        println("출발합니다")
+    }
+
+    fun navi(destination: String) {
+        println("${destination}으로 목적지가 설정되었습니다")
+    }
+
+}
+
+
+// 클래스의 기능들을 만드는 방법(2) -(1)번과 (2)번은 완전히 동일하다
+class RunableCar2 {
+    var engine: String
+    var body: String
+
+    constructor(engine: String, body: String) {
+        this.engine = engine
+        this.body = body
+    }
+
+    // 초기세팅을 할 때 유용하다
+    init {
+        println("RunableCar2가 생성되었습니다")
+    }
+
+    fun ride() {
+        println("탑승하셨습니다")
+    }
+
+    fun drive() {
+        println("출발합니다")
+    }
+
+    fun navi(destination: String) {
+        println("${destination}으로 목적지가 설정되었습니다")
+    }
+
+}
+
+
+// 오버로딩 : 이름이 동일하지만 파라미터가 다른 함수를 처리하는 방법
+class TestClass() {
+
+    fun test(a: Int) {
+        println("up")
+    }
+
+    fun test(a: Int, b: Int) {
+        println("down")
+    }
 
 }
