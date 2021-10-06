@@ -117,26 +117,3 @@ class Calculator3(val initialValue: Int) {
     }
 
 }
-
-
-// 2) 은행 계좌 만들기
-// - 계좌 생성 가능 (이름, 생년월일)
-// - 잔고를 확인 하는 기능
-// - 출금 기능
-// - 예금 기능
-class BankAccount() {
-
-    fun makeAccount(name: String, birth: String) {
-        println("${name}님의 계좌가 생성되었습니다. (생년월일 : ${birth})")
-    }
-
-    fun checkMoney() {
-
-    }
-
-}
-
-// 3) TV 클래스
-// - on/off 기능
-// - 채널을 돌리는 기능
-// - 초기 채널은 (S사 M사 K사 3개)
