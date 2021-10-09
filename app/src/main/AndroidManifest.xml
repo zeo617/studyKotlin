@@ -10,16 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyKotlin">
         <activity
-            android:name=".Android.Listener"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Android.Calculator_04"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".Android.Listener_03"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
