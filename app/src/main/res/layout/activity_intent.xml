@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Listener">
+    tools:context=".Intent1">
 
-    <TextView
-        android:id="@+id/hello"
+    <Button
+        android:id="@+id/changeActivity"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:text="hello" />
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/gradient"/>
+        android:text="인텐트" />
 
 </LinearLayout>
+</layout>

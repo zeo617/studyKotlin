@@ -1,12 +1,11 @@
-package com.jeho.studykotlin.Android
+package com.jeho.studykotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.jeho.studykotlin.R
 import com.jeho.studykotlin.databinding.ActivityCalculator04Binding
 
-class Calculator_04 : AppCompatActivity() {
+class Calculator : AppCompatActivity() {
 
     private lateinit var binding: ActivityCalculator04Binding
 
