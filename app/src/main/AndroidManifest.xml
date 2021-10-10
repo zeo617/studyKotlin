@@ -10,12 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyKotlin">
         <activity
-            android:name=".Intent2"
-            android:exported="true" />
-        <activity
-            android:name=".Intent1"
-            android:exported="true">
-
+            android:name=".FragmentActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,14 +20,25 @@
 
         </activity>
         <activity
-            android:name=".Calculator"
+            android:name=".OpenInternet"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Intent2"
+            android:exported="true" />
+        <activity
+            android:name=".Intent1"
             android:exported="true"></activity>
+        <activity
+            android:name=".Calculator"
+            android:exported="true" />
         <activity
             android:name=".Listener"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
