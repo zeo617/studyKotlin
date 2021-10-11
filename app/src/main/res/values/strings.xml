@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">studyKotlin</string>
+
+    <string name="hello">안녕하세요 누구누구입니다 헬로</string>
 </resources>
